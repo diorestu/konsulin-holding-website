@@ -140,15 +140,15 @@ const VanillaComponents = {
       <div class="container top-bar-inner">
         <div class="top-bar-left">
           <span class="top-bar-item">
-            <i data-lucide="shield-check"></i> Konsulin Corpora Holding Ltd. &bull; IDX &amp; Global Standards
+            <i data-lucide="shield-check"></i> Konsulin Group &bull; Business, Financial, Tax &amp; Legal Advisory Ecosystem
           </span>
           <span class="top-bar-item">
-            <i data-lucide="map-pin"></i> SCBD District 8, Senayan, Jakarta Selatan
+            <i data-lucide="map-pin"></i> HQ Greenwich Business Park, Tangerang
           </span>
         </div>
         <div class="top-bar-right">
           <span class="stock-pill">
-            <i data-lucide="trending-up"></i> KSNG.JK: IDR 4,820 (+3.65%)
+            <i data-lucide="phone"></i> Hotline/WA: +62 819 0879 7799
           </span>
           <span class="top-bar-item">
             <i data-lucide="globe"></i> ID | EN
@@ -168,20 +168,20 @@ const VanillaComponents = {
             </div>
             <div class="brand-text">
               <span class="brand-name">KONSULIN <span>GROUP</span></span>
-              <span class="brand-tagline">Holding Conglomerate</span>
+              <span class="brand-tagline">Business Advisory Ecosystem</span>
             </div>
           </a>
 
           <ul class="nav-menu">
             <li><a href="#/" class="nav-link ${activeRoute === '/' ? 'active' : ''}">Home</a></li>
             <li><a href="#/about" class="nav-link ${activeRoute === '/about' ? 'active' : ''}">About Us</a></li>
-            <li><a href="#/services" class="nav-link ${activeRoute === '/services' ? 'active' : ''}">Our Services</a></li>
+            <li><a href="#/services" class="nav-link ${activeRoute === '/services' ? 'active' : ''}">Advisory &amp; Solutions</a></li>
             <li><a href="#/contact" class="nav-link ${activeRoute === '/contact' ? 'active' : ''}">Contacts</a></li>
           </ul>
 
           <div class="nav-actions">
             <a href="#/contact" class="btn btn-gold btn-sm">
-              <span>Executive Portal</span>
+              <span>Business Health Check</span>
               <i data-lucide="arrow-up-right"></i>
             </a>
             <button class="mobile-toggle" id="spaMobileToggle" aria-label="Menu">
@@ -202,7 +202,7 @@ const VanillaComponents = {
             <div class="brand-emblem"><i data-lucide="crown"></i></div>
             <div class="brand-text">
               <span class="brand-name">KONSULIN <span>GROUP</span></span>
-              <span class="brand-tagline">Holding Conglomerate</span>
+              <span class="brand-tagline">Business Advisory Ecosystem</span>
             </div>
           </a>
           <button class="drawer-close" id="spaDrawerClose"><i data-lucide="x"></i></button>
@@ -210,13 +210,13 @@ const VanillaComponents = {
         <div class="drawer-menu">
           <a href="#/" class="drawer-link ${activeRoute === '/' ? 'active' : ''}">Home</a>
           <a href="#/about" class="drawer-link ${activeRoute === '/about' ? 'active' : ''}">About Us</a>
-          <a href="#/services" class="drawer-link ${activeRoute === '/services' ? 'active' : ''}">Our Services</a>
+          <a href="#/services" class="drawer-link ${activeRoute === '/services' ? 'active' : ''}">Advisory &amp; Solutions</a>
           <a href="#/contact" class="drawer-link ${activeRoute === '/contact' ? 'active' : ''}">Contacts</a>
         </div>
       </div>
       <div>
         <a href="#/contact" class="btn btn-gold" style="width: 100%;">
-          <span>Hubungi Kami</span>
+          <span>Konsultasi Pertumbuhan</span>
           <i data-lucide="arrow-right"></i>
         </a>
       </div>
@@ -232,47 +232,46 @@ const VanillaComponents = {
               <div class="brand-emblem"><i data-lucide="crown"></i></div>
               <div class="brand-text">
                 <span class="brand-name">KONSULIN <span>GROUP</span></span>
-                <span class="brand-tagline">Holding Conglomerate</span>
+                <span class="brand-tagline">Business Advisory Ecosystem</span>
               </div>
             </a>
             <p style="font-size: 0.88rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 1.5rem;">
-              Konglomerasi holding korporasi terintegrasi yang menghadirkan keunggulan investasi strategis, transformasi industri, dan nilai ekonomi berkelanjutan di tingkat regional dan global.
+              Bukan sekadar vendor akuntansi atau pajak. Kami adalah Strategic Business Growth Partner yang mengintegrasikan Advisory Bisnis, Pajak &amp; Keuangan (Konsulin.id), Legalitas (LegalbyKonsulin), dan Teknologi ERP (Zeni) untuk menyelesaikan masalah bernilai tinggi.
             </p>
           </div>
           <div class="footer-col">
-            <h4>Navigasi Utama</h4>
+            <h4>Navigasi Ekosistem</h4>
             <ul class="footer-links">
-              <li><a href="#/">Home</a></li>
-              <li><a href="#/about">About Us (Tentang Kami)</a></li>
-              <li><a href="#/services">Our Services &amp; Pillars</a></li>
-              <li><a href="#/contact">Executive Contacts</a></li>
+              <li><a href="#/">Home &amp; Value Architecture</a></li>
+              <li><a href="#/about">Tentang Konsulin &amp; Model Bisnis</a></li>
+              <li><a href="#/services">Solusi: RUN &bull; FIX &bull; GROW</a></li>
+              <li><a href="#/contact">Request Health Check &amp; Advisory</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h4>Pilar Portofolio</h4>
+            <h4>4 Pilar Ekosistem</h4>
             <ul class="footer-links">
-              <li><a href="#/services">Konsulin Capital &amp; Ventures</a></li>
-              <li><a href="#/services">Konsulin Executive Advisory</a></li>
-              <li><a href="#/services">Konsulin Green Energy &amp; Infra</a></li>
-              <li><a href="#/services">Konsulin Digital Dynamics (AI)</a></li>
-              <li><a href="#/services">Konsulin Living &amp; Real Estate</a></li>
+              <li><a href="#/services">Konsulin Business Advisory</a></li>
+              <li><a href="#/services">Konsulin.id (Tax &amp; Accounting)</a></li>
+              <li><a href="#/services">LegalbyKonsulin (Corporate Legal)</a></li>
+              <li><a href="#/services">Zeni / IT Software (ERP &amp; Automation)</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h4>Kantor Pusat SCBD</h4>
+            <h4>Kantor Pusat (HQ)</h4>
             <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
-              Treasury Tower, 45th Floor, SCBD Lot 28, Jl. Jend. Sudirman Kav 52-53, Jakarta Selatan 12190
+              Greenwich Business Park, Blok B1, Kec. Pagedangan, Kabupaten Tangerang, Banten 15331
             </p>
             <div style="margin-top: 1rem; color: var(--gold-400); font-weight: 600; font-size: 0.85rem;">
-              Tel: +62 (21) 5088-7800
+              Hotline / WhatsApp: +62 819 0879 7799 &bull; partner@konsulingroup.com
             </div>
           </div>
         </div>
         <div class="footer-bottom">
-          <div>&copy; 2026 PT Konsulin Corpora Utama Tbk. Hak Cipta Dilindungi Undang-Undang.</div>
+          <div>&copy; 2026 Konsulin Group. All Rights Reserved. Modelled for High-Impact Corporate Growth.</div>
           <div style="display: flex; gap: 1.5rem;">
-            <a href="#/about" style="color: var(--text-muted);">Tata Kelola &amp; ESG</a>
-            <a href="#/contact" style="color: var(--text-muted);">Hubungan Investor</a>
+            <a href="#/services" style="color: var(--text-muted);">Methodology</a>
+            <a href="#/contact" style="color: var(--text-muted);">Confidential NDA</a>
           </div>
         </div>
       </div>
@@ -296,43 +295,43 @@ const Pages = {
       <div class="hero-bg-overlay"></div>
       <div class="container hero-grid">
         <div class="hero-content">
-          <div class="section-badge"><i data-lucide="sparkles"></i> Premier Multidisciplinary Holding</div>
-          <h1 class="hero-title">Membangun Sinergi, Mengukir <span class="text-gold-gradient">Warisan Kejayaan</span></h1>
+          <div class="section-badge"><i data-lucide="sparkles"></i> Your Strategic Business Growth Partner</div>
+          <h1 class="hero-title">Bukan Sekadar Konsultan. Kami Menyelesaikan <span class="text-gold-gradient">Masalah Bisnis Bernilai Tinggi.</span></h1>
           <p class="hero-description">
-            Konsulin Group adalah holding korporasi terintegrasi yang memimpin transformasi strategis lintas industri—Capital, Advisory, Green Energy, hingga Enterprise AI berstandar global.
+            Mengadaptasi model advisory kaliber dunia: menganalisis tantangan korporasi, menyusun formulasi strategi teruji, dan mengeksekusi implementasi terpadu lintas Strategi, Pajak &amp; Keuangan, Legalitas, serta Sistem Teknologi.
           </p>
           <div class="hero-actions">
-            <a href="#/services" class="btn btn-gold btn-lg">
-              <span>Eksplorasi Bisnis Kami</span>
+            <a href="#/contact" class="btn btn-gold btn-lg">
+              <span>Mulai Business Health Check</span>
               <i data-lucide="arrow-right"></i>
             </a>
-            <a href="#/about" class="btn btn-outline-gold btn-lg">
-              <span>Profil Korporasi</span>
+            <a href="#/services" class="btn btn-outline-gold btn-lg">
+              <span>Metodologi RUN-FIX-GROW</span>
             </a>
           </div>
           <div class="hero-trust">
-            <div class="hero-trust-item"><span class="hero-trust-number">IDR 42T+</span><span class="hero-trust-label">Assets Managed</span></div>
-            <div class="hero-trust-item"><span class="hero-trust-number">18+</span><span class="hero-trust-label">Subsidiaries</span></div>
-            <div class="hero-trust-item"><span class="hero-trust-number">6</span><span class="hero-trust-label">Global Hubs</span></div>
+            <div class="hero-trust-item"><span class="hero-trust-number">Rp 3.8T+</span><span class="hero-trust-label">Client Revenue Impact</span></div>
+            <div class="hero-trust-item"><span class="hero-trust-number">350+</span><span class="hero-trust-label">Enterprise Engagements</span></div>
+            <div class="hero-trust-item"><span class="hero-trust-number">4 Pilar</span><span class="hero-trust-label">Sinergi Terpadu</span></div>
           </div>
         </div>
 
         <div class="hero-visual">
           <div class="hero-card-main">
             <div class="hero-card-header">
-              <span class="hero-card-tag"><i data-lucide="layers"></i> Group Ecosystem</span>
-              <span style="color: var(--gold-400); font-weight: 700; font-size: 0.85rem;">FY 2025/2026</span>
+              <span class="hero-card-tag"><i data-lucide="layers"></i> Advisory Ecosystem</span>
+              <span style="color: var(--gold-400); font-weight: 700; font-size: 0.85rem;">Formula RUN-FIX-GROW</span>
             </div>
             <div class="hero-card-body">
-              <h4>Konsulin Strategic Holdings</h4>
+              <h4>Arsitektur Solusi Terintegrasi</h4>
               <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
-                Portofolio investasi multi-sektor dengan pertumbuhan majemuk berkelanjutan &amp; komitmen ESG tingkat tertinggi.
+                Membantu pemilik bisnis dan CEO beralih dari operasional harian menuju ekspansi dan valuasi skala holding:
               </p>
               <div class="hero-card-metrics">
-                <div class="metric-box"><div class="metric-val">+28.4%</div><div class="metric-lbl">YoY Growth</div></div>
-                <div class="metric-box"><div class="metric-val">AAA</div><div class="metric-lbl">Credit Rating</div></div>
-                <div class="metric-box"><div class="metric-val">12,000+</div><div class="metric-lbl">Direct Workforce</div></div>
-                <div class="metric-box"><div class="metric-val">100%</div><div class="metric-lbl">GCG Compliance</div></div>
+                <div class="metric-box"><div class="metric-val">RUN</div><div class="metric-lbl">Operasional Rapi &amp; Stabil</div></div>
+                <div class="metric-box"><div class="metric-val">FIX</div><div class="metric-lbl">Restrukturisasi Masalah</div></div>
+                <div class="metric-box"><div class="metric-val">GROW</div><div class="metric-lbl">Ekspansi &amp; Valuasi</div></div>
+                <div class="metric-box"><div class="metric-val">100%</div><div class="metric-lbl">Sinergi 4 Lini Utama</div></div>
               </div>
             </div>
           </div>
@@ -344,10 +343,10 @@ const Pages = {
     <section class="stats-strip">
       <div class="container">
         <div class="stats-grid">
-          <div class="stat-item"><div class="stat-number">Rp 42 T+</div><div class="stat-label">Total Nilai Kapitalisasi Aset</div></div>
-          <div class="stat-item"><div class="stat-number">18 Entitas</div><div class="stat-label">Anak Perusahaan &amp; Joint Ventures</div></div>
-          <div class="stat-item"><div class="stat-number">24 Tahun</div><div class="stat-label">Dedikasi Pertumbuhan Berkelanjutan</div></div>
-          <div class="stat-item"><div class="stat-number">6 Negara</div><div class="stat-label">Jaringan Operasional Regional &amp; Global</div></div>
+          <div class="stat-item"><div class="stat-number">RUN</div><div class="stat-label">Recurring Accounting, Tax, Payroll &amp; Legal Admin</div></div>
+          <div class="stat-item"><div class="stat-number">FIX</div><div class="stat-label">Restrukturisasi Pajak, Keuangan &amp; Audit Diagnostik</div></div>
+          <div class="stat-item"><div class="stat-number">GROW</div><div class="stat-label">Retainer Advisory, Holding Architecture &amp; M&amp;A</div></div>
+          <div class="stat-item"><div class="stat-number">TECH</div><div class="stat-label">Zeni Software ERP, Dashboard &amp; Otomasi Proses</div></div>
         </div>
       </div>
     </section>
@@ -356,28 +355,53 @@ const Pages = {
     <section class="section-py bg-navy-elevated">
       <div class="container">
         <div class="section-header">
-          <div class="section-badge"><i data-lucide="grid"></i> 5 Pilar Portofolio</div>
-          <h2 class="section-title">Ekosistem Bisnis <span class="text-gold-gradient">Konsulin Group</span></h2>
+          <div class="section-badge"><i data-lucide="grid"></i> Ekosistem Terintegrasi</div>
+          <h2 class="section-title">4 Pilar Sinergi <span class="text-gold-gradient">Konsulin Group</span></h2>
           <div class="gold-divider"></div>
-          <p class="section-subtitle">Sinergi multi-industri terkemuka yang menciptakan keunggulan kompetitif jangka panjang.</p>
+          <p class="section-subtitle">Sinergi multidisiplin yang membedakan kami dari firma akuntansi biasa atau konsultan teori belaka.</p>
         </div>
 
-        <div class="card-grid-3">
-          <div class="subsidiary-card">
-            <div class="subsidiary-img-wrap"><img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=800&q=80" alt="Capital"><div class="subsidiary-overlay"></div><span class="subsidiary-badge">Pilar 01</span></div>
-            <div class="subsidiary-content"><h3>Konsulin Capital &amp; Ventures</h3><p style="font-size: 0.9rem; color: var(--text-secondary);">Pengelolaan modal ventura, merger &amp; akuisisi terstruktur, restrukturisasi korporasi.</p></div>
+        <div class="card-grid-2">
+          <div class="subsidiary-card" style="margin-bottom: 1.5rem;">
+            <div class="subsidiary-content">
+              <span class="subsidiary-badge">Pilar 01 &bull; Strategy</span>
+              <h3 style="font-size: 1.4rem; margin-top: 0.5rem; color: #fff;">Konsulin Business Advisory</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                Penajaman strategi pertumbuhan, holding architecture, corporate restructuring, perancangan KPI &amp; OKR, serta pendampingan M&amp;A / fundraising.
+              </p>
+            </div>
+          </div>
+          <div class="subsidiary-card" style="margin-bottom: 1.5rem;">
+            <div class="subsidiary-content">
+              <span class="subsidiary-badge">Pilar 02 &bull; Tax &amp; Finance</span>
+              <h3 style="font-size: 1.4rem; margin-top: 0.5rem; color: #fff;">Konsulin.id (Tax &amp; Accounting)</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                Perencanaan dan optimalisasi pajak legal, pendampingan SP2DK/pemeriksaan, penyusunan laporan keuangan audit-ready, dan cash flow control.
+              </p>
+            </div>
           </div>
           <div class="subsidiary-card">
-            <div class="subsidiary-img-wrap"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Advisory"><div class="subsidiary-overlay"></div><span class="subsidiary-badge">Pilar 02</span></div>
-            <div class="subsidiary-content"><h3>Konsulin Executive Consulting</h3><p style="font-size: 0.9rem; color: var(--text-secondary);">Konsultansi manajemen risiko ISO 31000, tata kelola GCG, dan transformasi eksekutif.</p></div>
+            <div class="subsidiary-content">
+              <span class="subsidiary-badge">Pilar 03 &bull; Legal</span>
+              <h3 style="font-size: 1.4rem; margin-top: 0.5rem; color: #fff;">LegalbyKonsulin (Corporate Legal)</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                Penyusunan perjanjian kemitraan, shareholders agreement, mitigasi risiko sengketa, compliance perizinan, dan audit legalitas korporasi.
+              </p>
+            </div>
           </div>
           <div class="subsidiary-card">
-            <div class="subsidiary-img-wrap"><img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80" alt="Energy"><div class="subsidiary-overlay"></div><span class="subsidiary-badge">Pilar 03</span></div>
-            <div class="subsidiary-content"><h3>Konsulin Energy &amp; Infra</h3><p style="font-size: 0.9rem; color: var(--text-secondary);">Pembangkit PLTS hijau, smart grid cerdas, dan logistik maritim terintegrasi.</p></div>
+            <div class="subsidiary-content">
+              <span class="subsidiary-badge">Pilar 04 &bull; Technology</span>
+              <h3 style="font-size: 1.4rem; margin-top: 0.5rem; color: #fff;">Zeni / IT Software (Digital Backbone)</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                Sistem ERP kustom, dashboard keuangan real-time untuk Board of Directors, automasi alur kerja, dan integrasi multi-cabang terpadu.
+              </p>
+            </div>
           </div>
         </div>
+
         <div style="text-align: center; margin-top: 2.5rem;">
-          <a href="#/services" class="btn btn-outline-gold"><span>Lihat Seluruh Portofolio &amp; Layanan</span><i data-lucide="arrow-right"></i></a>
+          <a href="#/services" class="btn btn-gold"><span>Pelajari Tangga Solusi &amp; Layanan</span><i data-lucide="arrow-right"></i></a>
         </div>
       </div>
     </section>
@@ -388,7 +412,7 @@ const Pages = {
       <div class="container">
         <div class="breadcrumbs"><a href="#/">Home</a><i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i><span>About Us</span></div>
         <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 0.8rem;">Tentang <span class="text-gold-gradient">Konsulin Group</span></h1>
-        <p class="section-subtitle" style="max-width: 650px; margin: 0 auto;">Dua dekade kepemimpinan terintegrasi, integritas tata kelola GCG, dan komitmen keberlanjutan ESG.</p>
+        <p class="section-subtitle" style="max-width: 650px; margin: 0 auto;">Membangun ekosistem advisory terpadu yang membantu bisnis menyelesaikan masalah kompleks dan melipatgandakan valuasi.</p>
       </div>
     </section>
 
@@ -396,16 +420,16 @@ const Pages = {
       <div class="container">
         <div class="card-grid-2" style="align-items: center;">
           <div>
-            <div class="section-badge"><i data-lucide="landmark"></i> Identitas Holding</div>
-            <h2 class="section-title">Mengorkestrasi Pertumbuhan Bernilai Tinggi</h2>
+            <div class="section-badge"><i data-lucide="shield-check"></i> Filosofi Advisory</div>
+            <h2 class="section-title">Bukan Menjual Jam Kerja, Tapi Solusi Nyata</h2>
             <div class="gold-divider" style="margin-left: 0;"></div>
             <p style="margin-bottom: 1.2rem; font-size: 1.05rem; line-height: 1.8;">
-              Didirikan sejak 2002 di Jakarta, <strong>PT Konsulin Corpora Utama Tbk</strong> telah berkembang menjadi holding konglomerasi terkemuka dengan kapitalisasi aset lebih dari IDR 42 Triliun.
+              Banyak perusahaan terjebak dalam silos: konsultan pajak bekerja sendiri, pengacara legal hanya memikirkan pasal, dan tim IT membuat aplikasi tanpa mengerti laporan keuangan.
             </p>
             <p style="margin-bottom: 2rem; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7;">
-              Kami menaungi 18 entitas usaha aktif lintas sektor, didukung standar Good Corporate Governance (GCG) dengan sertifikasi ISO 31000, ISO 37001, dan ISO 27001.
+              <strong>Konsulin Group</strong> memadukan seluruh kompetensi tersebut dalam satu kendali strategis. Berawal dari praktik perpajakan dan keuangan terpercaya, kami bertransformasi menjadi <em>Business Advisory Ecosystem</em> dengan formula teruji: <strong>RUN &rarr; FIX &rarr; GROW</strong>.
             </p>
-            <a href="#/contact" class="btn btn-gold"><span>Hubungi Dewan Direksi</span><i data-lucide="arrow-right"></i></a>
+            <a href="#/contact" class="btn btn-gold"><span>Jadwalkan Diskusi Strategis</span><i data-lucide="arrow-right"></i></a>
           </div>
           <div style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-gold); box-shadow: var(--shadow-luxury);">
             <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80" alt="Headquarters" style="width: 100%; height: 420px; object-fit: cover;">
@@ -419,56 +443,60 @@ const Pages = {
     <section class="page-hero">
       <div class="container">
         <div class="breadcrumbs"><a href="#/">Home</a><i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i><span>Our Services</span></div>
-        <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 0.8rem;">Pilar Portofolio &amp; <span class="text-gold-gradient">Layanan Unggulan</span></h1>
-        <p class="section-subtitle" style="max-width: 650px; margin: 0 auto;">Solusi berskala institusional yang terintegrasi untuk melipatgandakan nilai korporasi.</p>
+        <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 0.8rem;">Tangga Solusi &amp; <span class="text-gold-gradient">Model Advisory</span></h1>
+        <p class="section-subtitle" style="max-width: 650px; margin: 0 auto;">Struktur paket bertingkat yang dirancang untuk menjawab kebutuhan perusahaan di setiap fase pertumbuhan.</p>
       </div>
     </section>
 
     <section class="section-py">
       <div class="container">
         <div class="filter-nav">
-          <button class="filter-btn spa-filter-btn active" data-filter="all">Semua Pilar</button>
-          <button class="filter-btn spa-filter-btn" data-filter="capital">Capital &amp; Investment</button>
-          <button class="filter-btn spa-filter-btn" data-filter="advisory">Executive Advisory</button>
-          <button class="filter-btn spa-filter-btn" data-filter="energy">Energy &amp; Infra</button>
-          <button class="filter-btn spa-filter-btn" data-filter="tech">Digital Dynamics AI</button>
+          <button class="filter-btn spa-filter-btn active" data-filter="all">Semua Solusi</button>
+          <button class="filter-btn spa-filter-btn" data-filter="level1">Level 1: Health Check</button>
+          <button class="filter-btn spa-filter-btn" data-filter="level2">Level 2: Projects</button>
+          <button class="filter-btn spa-filter-btn" data-filter="level3">Level 3: Advisory Retainers</button>
+          <button class="filter-btn spa-filter-btn" data-filter="tech">Zeni IT Software</button>
         </div>
 
-        <div style="display: flex; flex-direction: column; gap: 2.5rem;">
-          <div class="luxury-card spa-service-item" data-category="capital">
-            <span class="section-badge">Pilar 01 &bull; Konsulin Capital</span>
-            <h3 style="font-size: 1.8rem; color: #fff; margin-bottom: 0.8rem;">Private Equity &amp; M&amp;A Advisory</h3>
+        <div style="display: flex; flex-direction: column; gap: 2rem;">
+          <div class="luxury-card spa-service-item" data-category="level1">
+            <span class="section-badge">Level 1 &bull; Entry Diagnostic</span>
+            <h3 style="font-size: 1.8rem; color: #fff; margin-bottom: 0.8rem;">Konsulin Business Health Check</h3>
             <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.2rem;">
-              Alokasi modal cerdas, pembiayaan terstruktur, dan orkestrasi akuisisi lintas batas bernilai strategis tinggi.
+              Audit diagnostik cepat 2-3 minggu terhadap kesehatan keuangan, eksposur risiko pajak, kepatuhan legal, dan efisiensi sistem operasional. Menghasilkan Executive Diagnostic Report &amp; 90-day Action Plan.
             </p>
-            <a href="#/contact" class="btn btn-gold btn-sm"><span>Konsultasi Investasi</span><i data-lucide="arrow-right"></i></a>
+            <div style="color: var(--gold-400); font-weight: 700; margin-bottom: 1rem;">Investasi: Rp 5.000.000 – Rp 15.000.000 (One-time)</div>
+            <a href="#/contact" class="btn btn-gold btn-sm"><span>Daftar Health Check</span><i data-lucide="arrow-right"></i></a>
           </div>
 
-          <div class="luxury-card spa-service-item" data-category="advisory">
-            <span class="section-badge">Pilar 02 &bull; Konsulin Consulting</span>
-            <h3 style="font-size: 1.8rem; color: #fff; margin-bottom: 0.8rem;">Strategic Corporate Governance &amp; Restructuring</h3>
+          <div class="luxury-card spa-service-item" data-category="level2">
+            <span class="section-badge">Level 2 &bull; Consulting Projects</span>
+            <h3 style="font-size: 1.8rem; color: #fff; margin-bottom: 0.8rem;">High-Ticket Consulting Projects</h3>
             <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.2rem;">
-              Manajemen risiko ISO 31000, audit tata kelola korporat, efisiensi rantai nilai, dan integrasi kerangka kerja ESG.
+              Solusi berbasis proyek dengan lingkup terukur untuk membenahi masalah besar korporasi: Restrukturisasi Keuangan &amp; Turnaround, Optimalisasi Pajak &amp; Audit SP2DK, Holding Setup &amp; Tata Kelola, serta Legal Due Diligence M&amp;A.
             </p>
-            <a href="#/contact" class="btn btn-gold btn-sm"><span>Jadwalkan Konsultasi</span><i data-lucide="arrow-right"></i></a>
+            <div style="color: var(--gold-400); font-weight: 700; margin-bottom: 1rem;">Investasi: Rp 25.000.000 – Rp 250.000.000+ (Per Project)</div>
+            <a href="#/contact" class="btn btn-gold btn-sm"><span>Konsultasi Proyek</span><i data-lucide="arrow-right"></i></a>
           </div>
 
-          <div class="luxury-card spa-service-item" data-category="energy">
-            <span class="section-badge">Pilar 03 &bull; Konsulin Infra</span>
-            <h3 style="font-size: 1.8rem; color: #fff; margin-bottom: 0.8rem;">Renewable Energy &amp; Sustainable Logistics</h3>
+          <div class="luxury-card spa-service-item" data-category="level3">
+            <span class="section-badge">Level 3 &bull; Ongoing Retainer</span>
+            <h3 style="font-size: 1.8rem; color: #fff; margin-bottom: 0.8rem;">Monthly Business Advisory Retainer</h3>
             <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.2rem;">
-              Pembangkit energi ramah lingkungan (PLTS &amp; Hydro 850 MW) serta pelabuhan logistik berkelanjutan.
+              Pendampingan strategis berkelanjutan layaknya memiliki tim Chief Strategy Officer, Chief Financial Officer, dan General Counsel eksternal. Evaluasi bulanan, review KPI, dan mitigasi risiko preventif.
             </p>
-            <a href="#/contact" class="btn btn-gold btn-sm"><span>Eksplorasi Proyek Hijau</span><i data-lucide="arrow-right"></i></a>
+            <div style="color: var(--gold-400); font-weight: 700; margin-bottom: 1rem;">Investasi: Rp 15.000.000 – Rp 50.000.000+ / bulan</div>
+            <a href="#/contact" class="btn btn-gold btn-sm"><span>Pilih Retainer</span><i data-lucide="arrow-right"></i></a>
           </div>
 
           <div class="luxury-card spa-service-item" data-category="tech">
-            <span class="section-badge">Pilar 04 &bull; Konsulin Tech</span>
-            <h3 style="font-size: 1.8rem; color: #fff; margin-bottom: 0.8rem;">Enterprise AI &amp; Green Data Centers</h3>
+            <span class="section-badge">Cross-Selling &bull; Digital Backbone</span>
+            <h3 style="font-size: 1.8rem; color: #fff; margin-bottom: 0.8rem;">Zeni / IT Software Solutions</h3>
             <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.2rem;">
-              Tier-4 green data center, infrastruktur model AI terapan perbankan, dan keamanan siber bersertifikasi ISO 27001.
+              Implementasi ERP, custom business dashboard untuk C-level, sistem manajemen rantai pasok, dan modul otomasi keuangan yang memastikan strategi terimplementasi dengan mulus.
             </p>
-            <a href="#/contact" class="btn btn-gold btn-sm"><span>Konsultasi Teknologi</span><i data-lucide="arrow-right"></i></a>
+            <div style="color: var(--gold-400); font-weight: 700; margin-bottom: 1rem;">Investasi: Berdasarkan modul &amp; skala operasional</div>
+            <a href="#/contact" class="btn btn-gold btn-sm"><span>Demo Zeni Software</span><i data-lucide="arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -480,7 +508,7 @@ const Pages = {
       <div class="container">
         <div class="breadcrumbs"><a href="#/">Home</a><i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i><span>Contacts</span></div>
         <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 0.8rem;">Hubungi <span class="text-gold-gradient">Konsulin Group</span></h1>
-        <p class="section-subtitle" style="max-width: 650px; margin: 0 auto;">Saluran komunikasi resmi kemitraan strategis, hubungan investor, dan sekretariat korporasi.</p>
+        <p class="section-subtitle" style="max-width: 650px; margin: 0 auto;">Diskusikan tantangan bisnis Anda bersama Senior Partner kami di Kantor Pusat Tangerang, Cabang Bali, atau Cabang Surabaya.</p>
       </div>
     </section>
 
@@ -489,29 +517,47 @@ const Pages = {
         <div class="contact-grid">
           <div>
             <div class="contact-info-card">
-              <span class="section-badge"><i data-lucide="compass"></i> Global Headquarters</span>
-              <h3 style="font-size: 1.6rem; color: #fff; margin-bottom: 1.5rem;">Kantor Pusat SCBD Jakarta</h3>
+              <span class="section-badge"><i data-lucide="compass"></i> Headquarters</span>
+              <h3 style="font-size: 1.6rem; color: #fff; margin-bottom: 1.5rem;">Kantor Pusat &amp; Cabang</h3>
+              <div class="contact-item">
+                <div class="contact-icon"><i data-lucide="building-2"></i></div>
+                <div>
+                  <h4 style="font-size: 1rem; color: #fff; margin-bottom: 0.2rem;">HQ Tangerang</h4>
+                  <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                    Greenwich Business Park, Blok B1, Kec. Pagedangan, Kabupaten Tangerang, Banten 15331
+                  </p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"><i data-lucide="compass"></i></div>
+                <div>
+                  <h4 style="font-size: 1rem; color: #fff; margin-bottom: 0.2rem;">Bali Office</h4>
+                  <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                    De' Black House, Jl. Kusuma Bangsa VII No.71 Lantai 2, Pemecutan Kaja, Kec. Denpasar Utara, Kota Denpasar, Bali 80111
+                  </p>
+                </div>
+              </div>
               <div class="contact-item">
                 <div class="contact-icon"><i data-lucide="map-pin"></i></div>
                 <div>
-                  <h4 style="font-size: 1rem; color: #fff; margin-bottom: 0.2rem;">Alamat Korporat</h4>
+                  <h4 style="font-size: 1rem; color: #fff; margin-bottom: 0.2rem;">Surabaya Office</h4>
                   <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
-                    Treasury Tower, Lantai 45-48, District 8 SCBD Lot 28, Jl. Jend. Sudirman Kav. 52-53, Jakarta Selatan 12190
+                    Ruko Jemursari Blok D12 No 203 RT03/RW08, Jl. Margorejo Indah XX, Kel. Sidosermo, Kec. Wonocolo, Surabaya, Jawa Timur 60239
                   </p>
                 </div>
               </div>
               <div class="contact-item">
                 <div class="contact-icon"><i data-lucide="phone-call"></i></div>
                 <div>
-                  <h4 style="font-size: 1rem; color: #fff; margin-bottom: 0.2rem;">Telepon &amp; Hotline</h4>
-                  <p style="font-size: 0.9rem; color: var(--text-secondary);">+62 (21) 5088-7800 (Hunting)</p>
+                  <h4 style="font-size: 1rem; color: #fff; margin-bottom: 0.2rem;">WhatsApp &amp; Hotline Resmi</h4>
+                  <p style="font-size: 0.9rem; color: var(--gold-400); font-weight: 700;">+62 819 0879 7799</p>
                 </div>
               </div>
               <div class="contact-item">
                 <div class="contact-icon"><i data-lucide="mail"></i></div>
                 <div>
-                  <h4 style="font-size: 1rem; color: #fff; margin-bottom: 0.2rem;">Email Resmi</h4>
-                  <p style="font-size: 0.9rem; color: var(--text-secondary);">holding@konsulingroup.com</p>
+                  <h4 style="font-size: 1rem; color: #fff; margin-bottom: 0.2rem;">Email Kemitraan</h4>
+                  <p style="font-size: 0.9rem; color: var(--text-secondary);">partner@konsulingroup.com</p>
                 </div>
               </div>
             </div>
@@ -519,10 +565,10 @@ const Pages = {
 
           <div>
             <div class="contact-form-card">
-              <span class="section-badge"><i data-lucide="send"></i> Direct Inquiry Form</span>
-              <h3 style="font-size: 1.6rem; color: #fff; margin-bottom: 0.5rem;">Permohonan Pertemuan Eksekutif</h3>
+              <span class="section-badge"><i data-lucide="send"></i> Confidential Inquiry</span>
+              <h3 style="font-size: 1.6rem; color: #fff; margin-bottom: 0.5rem;">Ajukan Konsultasi Bisnis</h3>
               <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 1.8rem;">
-                Tim Corporate Secretary akan menindaklanjuti permohonan Anda dalam 1x24 jam kerja.
+                Senior Partner kami akan meninjau dan merespons dalam 1x24 jam kerja di bawah kerangka kerahasiaan penuh (NDA).
               </p>
               <form id="spaContactForm">
                 <div class="form-row">
@@ -536,22 +582,23 @@ const Pages = {
                   </div>
                 </div>
                 <div class="form-group">
-                  <label class="form-label" for="spaDept">Topik Kepentingan *</label>
+                  <label class="form-label" for="spaDept">Kebutuhan / Level Solusi *</label>
                   <select id="spaDept" class="form-control" required>
-                    <option value="">-- Pilih Topik --</option>
-                    <option value="capital">Konsulin Capital &amp; Private Equity</option>
-                    <option value="advisory">Strategic Corporate Advisory</option>
-                    <option value="energy">Renewable Energy &amp; Infra</option>
-                    <option value="tech">Digital Dynamics Enterprise AI</option>
-                    <option value="ir">Hubungan Investor (Investor Relations)</option>
+                    <option value="">-- Pilih Kategori Layanan --</option>
+                    <option value="healthcheck">Level 1: Konsulin Business Health Check (Rp5M - Rp15M)</option>
+                    <option value="tax_financial">Level 2: Tax Optimization &amp; Financial Restructuring</option>
+                    <option value="holding_setup">Level 2: Holding Architecture &amp; Corporate Governance</option>
+                    <option value="legal_mna">Level 2: Legal Advisory, Contract &amp; M&amp;A Due Diligence</option>
+                    <option value="advisory_retainer">Level 3: Strategic Advisory Retainer (Bulanan)</option>
+                    <option value="zeni_tech">Technology &amp; Zeni Software ERP Implementation</option>
                   </select>
                 </div>
                 <div class="form-group">
-                  <label class="form-label" for="spaMsg">Pesan / Agenda Pembahasan *</label>
-                  <textarea id="spaMsg" class="form-control" placeholder="Tuliskan gambaran ringkas maksud pertemuan..." required></textarea>
+                  <label class="form-label" for="spaMsg">Tantangan Bisnis Saat Ini *</label>
+                  <textarea id="spaMsg" class="form-control" placeholder="Jelaskan tantangan pajak, restrukturisasi, legalitas, atau target pertumbuhan Anda..." required></textarea>
                 </div>
                 <button type="submit" class="btn btn-gold btn-lg" style="width: 100%;">
-                  <span>Kirimkan Dokumen Permohonan</span>
+                  <span>Kirim Permohonan Konsultasi</span>
                   <i data-lucide="send"></i>
                 </button>
               </form>
