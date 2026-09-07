@@ -1,0 +1,19 @@
+{
+  "name": "konsulingroup-web",
+  "version": "1.0.0",
+  "description": "Website Resmi Holding Korporasi PT Konsulin Corpora Utama Tbk - Luxury Navy & Gold Theme",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve -l 3000 .",
+    "start": "npx serve -l 3000 ."
+  },
+  "keywords": [
+    "holding-company",
+    "corporate-website",
+    "luxury-theme",
+    "navy-gold",
+    "gilroy-font"
+  ],
+  "author": "Konsulin Group Development Team",
+  "license": "UNLICENSED"
+}
