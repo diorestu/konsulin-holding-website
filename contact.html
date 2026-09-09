@@ -123,9 +123,10 @@
         <span class="stock-pill">
           <i data-lucide="phone"></i> Hotline/WA: +62 819 0879 7799
         </span>
-        <span class="top-bar-item">
-          <i data-lucide="globe"></i> ID | EN
-        </span>
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="id" aria-label="Bahasa Indonesia">ID</button>
+          <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        </div>
       </div>
     </div>
   </div>
@@ -284,15 +285,21 @@
             </div>
           </div>
 
-          <!-- Interactive Map Component (Pagedangan Tangerang) -->
+          <!-- Interactive Map Component (Konsulin.id BSD Tangerang) -->
           <div class="map-container">
             <iframe 
-              src="https://maps.google.com/maps?q=Greenwich%20Park%20BSD%20Pagedangan%20Tangerang&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+              src="https://maps.google.com/maps?q=-6.2777546,106.6321889&hl=id&z=16&output=embed" 
               allowfullscreen="" 
               loading="lazy" 
               referrerpolicy="no-referrer-when-downgrade"
-              title="Konsulin Group HQ Greenwich Business Park Location">
+              title="Lokasi Kantor Konsulin.id BSD Tangerang">
             </iframe>
+            <div style="position: absolute; bottom: 12px; right: 12px; z-index: 5;">
+              <a href="https://maps.app.goo.gl/NLeQVcj3ZYSqt7jv8" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-sm" style="box-shadow: 0 4px 15px rgba(0,0,0,0.6); font-size: 0.78rem; padding: 0.45rem 0.85rem;">
+                <i data-lucide="external-link"></i>
+                <span>Buka di Google Maps</span>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -405,10 +412,13 @@
           <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem;">
             Greenwich Business Park, Blok B1, Kec. Pagedangan, Kabupaten Tangerang, Banten 15331
           </p>
-          <div style="font-size: 0.85rem; color: var(--gold-300); line-height: 1.7;">
+          <div style="font-size: 0.85rem; color: var(--gold-300); line-height: 1.7; margin-bottom: 1.2rem;">
             <strong>Hotline/WA:</strong> +62 819 0879 7799<br>
             <strong>Email:</strong> partner@konsulingroup.com
           </div>
+          <a href="https://maps.app.goo.gl/NLeQVcj3ZYSqt7jv8" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; color: var(--gold-400); text-decoration: none; font-weight: 600;">
+            <i data-lucide="map-pin" style="width: 14px; height: 14px;"></i> Petunjuk Arah Google Maps &rarr;
+          </a>
         </div>
 
         <!-- Hub 2: Bali Office -->
@@ -528,6 +538,7 @@
   </div>
 
   <!-- Scripts -->
+  <script src="js/translations.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

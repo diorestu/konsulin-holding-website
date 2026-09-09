@@ -118,6 +118,24 @@ class VanillaApp {
         });
       });
     }
+
+    // Language switcher binding
+    const langBtns = document.querySelectorAll('.lang-btn');
+    if (langBtns.length && window.I18N) {
+      langBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetLang = btn.getAttribute('data-lang');
+          if (targetLang) {
+            window.I18N.setLanguage(targetLang);
+            langBtns.forEach(b => b.classList.toggle('active', b.getAttribute('data-lang') === targetLang));
+          }
+        });
+      });
+      // apply current language translations if applicable
+      const curLang = localStorage.getItem('konsulin_lang') || 'id';
+      window.I18N.setLanguage(curLang);
+    }
   }
 
   showToast(msg) {
@@ -150,9 +168,10 @@ const VanillaComponents = {
           <span class="stock-pill">
             <i data-lucide="phone"></i> Hotline/WA: +62 819 0879 7799
           </span>
-          <span class="top-bar-item">
-            <i data-lucide="globe"></i> ID | EN
-          </span>
+          <div class="lang-switcher">
+            <button class="lang-btn ${localStorage.getItem('konsulin_lang') !== 'en' ? 'active' : ''}" data-lang="id" aria-label="Bahasa Indonesia">ID</button>
+            <button class="lang-btn ${localStorage.getItem('konsulin_lang') === 'en' ? 'active' : ''}" data-lang="en" aria-label="English">EN</button>
+          </div>
         </div>
       </div>
     </div>
@@ -526,6 +545,9 @@ const Pages = {
                   <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
                     Greenwich Business Park, Blok B1, Kec. Pagedangan, Kabupaten Tangerang, Banten 15331
                   </p>
+                  <a href="https://maps.app.goo.gl/NLeQVcj3ZYSqt7jv8" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.8rem; color: var(--gold-400); text-decoration: none; margin-top: 0.25rem;">
+                    <i data-lucide="external-link" style="width: 13px; height: 13px;"></i> Buka Google Maps &rarr;
+                  </a>
                 </div>
               </div>
               <div class="contact-item">

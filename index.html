@@ -155,19 +155,20 @@
     <div class="container top-bar-inner">
       <div class="top-bar-left">
         <span class="top-bar-item">
-          <i data-lucide="shield-check"></i> Konsulin Group &bull; Business, Financial, Tax &amp; Legal Advisory Ecosystem
+          <i data-lucide="shield-check"></i> <span data-i18n="topbar.subtitle">Business, Financial, Tax &amp; Legal Advisory Ecosystem</span>
         </span>
         <span class="top-bar-item">
-          <i data-lucide="map-pin"></i> HQ Greenwich Business Park, Tangerang
+          <i data-lucide="map-pin"></i> <span data-i18n="topbar.hq">HQ Greenwich Business Park, Tangerang</span>
         </span>
       </div>
       <div class="top-bar-right">
-        <span class="stock-pill">
+        <a href="https://wa.me/6281908797799" target="_blank" class="stock-pill">
           <i data-lucide="phone"></i> Hotline/WA: +62 819 0879 7799
-        </span>
-        <span class="top-bar-item">
-          <i data-lucide="globe"></i> ID | EN
-        </span>
+        </a>
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="id" aria-label="Bahasa Indonesia">ID</button>
+          <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        </div>
       </div>
     </div>
   </div>
@@ -183,22 +184,22 @@
           </div>
           <div class="brand-text">
             <span class="brand-name">KONSULIN <span>GROUP</span></span>
-            <span class="brand-tagline">Business Advisory Ecosystem</span>
+            <span class="brand-tagline" data-i18n="topbar.subtitle">Business Advisory Ecosystem</span>
           </div>
         </a>
 
         <!-- Desktop Navigation -->
         <ul class="nav-menu">
-          <li><a href="index.html" class="nav-link active">Home</a></li>
-          <li><a href="about.html" class="nav-link">About Us</a></li>
-          <li><a href="services.html" class="nav-link">Our Services</a></li>
-          <li><a href="contact.html" class="nav-link">Contacts</a></li>
+          <li><a href="index.html" class="nav-link active" data-i18n="nav.home">Home</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="nav.about">About Us</a></li>
+          <li><a href="services.html" class="nav-link" data-i18n="nav.services">Advisory &amp; Solutions</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contacts</a></li>
         </ul>
 
         <!-- Action CTA -->
         <div class="nav-actions">
           <a href="contact.html" class="btn btn-gold btn-sm">
-            <span>Executive Portal</span>
+            <span data-i18n="nav.cta">Business Health Check</span>
             <i data-lucide="arrow-up-right"></i>
           </a>
           <button class="mobile-toggle" id="mobileToggle" aria-label="Open Navigation">
@@ -220,7 +221,7 @@
           </div>
           <div class="brand-text">
             <span class="brand-name">KONSULIN <span>GROUP</span></span>
-            <span class="brand-tagline">Holding Conglomerate</span>
+            <span class="brand-tagline">Business Advisory</span>
           </div>
         </a>
         <button class="drawer-close" id="drawerClose" aria-label="Close Navigation">
@@ -228,19 +229,19 @@
         </button>
       </div>
       <div class="drawer-menu">
-        <a href="index.html" class="drawer-link active">Home</a>
-        <a href="about.html" class="drawer-link">About Us</a>
-        <a href="services.html" class="drawer-link">Our Services</a>
-        <a href="contact.html" class="drawer-link">Contacts</a>
+        <a href="index.html" class="drawer-link active" data-i18n="nav.home">Home</a>
+        <a href="about.html" class="drawer-link" data-i18n="nav.about">About Us</a>
+        <a href="services.html" class="drawer-link" data-i18n="nav.services">Advisory &amp; Solutions</a>
+        <a href="contact.html" class="drawer-link" data-i18n="nav.contact">Contacts</a>
       </div>
     </div>
     <div>
       <a href="contact.html" class="btn btn-gold" style="width: 100%;">
-        <span>Hubungi Kami</span>
+        <span data-i18n="drawer.contact">Hubungi Kami</span>
         <i data-lucide="arrow-right"></i>
       </a>
       <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 1rem; text-align: center;">
-        &copy; 2026 PT Konsulin Corpora Utama Tbk.
+        &copy; 2026 Konsulin Group.
       </p>
     </div>
   </div>
@@ -249,69 +250,69 @@
   <section class="hero-section">
     <div class="hero-bg-overlay"></div>
     <div class="container hero-grid">
-      <div class="hero-content">
-        <div class="section-badge">
+      <div class="hero-content reveal-item">
+        <div class="section-badge" data-i18n="hero.badge">
           <i data-lucide="sparkles"></i> Business, Financial, Tax &amp; Legal Advisory Ecosystem
         </div>
         <h1 class="hero-title">
-          Bukan Sekadar Konsultasi, Kami Membangun <span class="text-gold-gradient">Solusi Bisnis Bernilai Besar</span>
+          <span data-i18n="hero.title_start">Bukan Sekadar Konsultasi, Kami Membangun </span><span class="text-gold-gradient" data-i18n="hero.title_highlight">Solusi Bisnis Bernilai Besar</span>
         </h1>
-        <p class="hero-description">
+        <p class="hero-description" data-i18n="hero.desc">
           Konsulin Group mengintegrasikan keahlian <strong>Financial &amp; Tax (Konsulin.id)</strong>, <strong>Legal Advisory (LegalbyKonsulin)</strong>, dan <strong>Business Technology (Zeni / IT)</strong> dalam satu ekosistem terpadu untuk merestrukturisasi, mengamankan, dan mengakselerasi profitabilitas perusahaan Anda.
         </p>
         <div class="hero-actions">
           <a href="services.html#health-check" class="btn btn-gold btn-lg">
-            <span>Konsulin Business Health Check</span>
+            <span data-i18n="hero.btn_primary">Konsulin Business Health Check</span>
             <i data-lucide="arrow-right"></i>
           </a>
           <a href="services.html#advisory-retainer" class="btn btn-outline-gold btn-lg">
-            <span>Executive Retainer</span>
+            <span data-i18n="hero.btn_secondary">Executive Retainer</span>
           </a>
         </div>
         <div class="hero-trust">
           <div class="hero-trust-item">
             <span class="hero-trust-number">RUN &bull; FIX &bull; GROW</span>
-            <span class="hero-trust-label">3-Level Strategic Formula</span>
+            <span class="hero-trust-label" data-i18n="hero.trust_formula">3-Level Strategic Formula</span>
           </div>
           <div class="hero-trust-item">
             <span class="hero-trust-number">4 Pillars</span>
-            <span class="hero-trust-label">Business, Tax, Legal &amp; Tech</span>
+            <span class="hero-trust-label" data-i18n="hero.trust_pillars">Business, Tax, Legal &amp; Tech</span>
           </div>
           <div class="hero-trust-item">
             <span class="hero-trust-number">High-Ticket</span>
-            <span class="hero-trust-label">Outcome-Based Advisory</span>
+            <span class="hero-trust-label" data-i18n="hero.trust_ticket">Outcome-Based Advisory</span>
           </div>
         </div>
       </div>
 
       <!-- Hero Visual Card: Ecosystem Blueprint -->
-      <div class="hero-visual">
+      <div class="hero-visual reveal-item reveal-delay-2">
         <div class="hero-card-main">
           <div class="hero-card-header">
-            <span class="hero-card-tag"><i data-lucide="shield"></i> Integrated Advisory Ecosystem</span>
+            <span class="hero-card-tag"><i data-lucide="shield"></i> <span data-i18n="blueprint.tag">Integrated Advisory Ecosystem</span></span>
             <span style="color: var(--gold-400); font-weight: 700; font-size: 0.85rem;">Value &bull; Strategy &bull; Scale</span>
           </div>
           <div class="hero-card-body">
-            <h4>Konsulin Strategic Advisory Group</h4>
-            <p style="font-size: 0.9rem; color: var(--text-muted);">
+            <h4 data-i18n="blueprint.title">Konsulin Strategic Advisory Group</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="blueprint.desc">
               Menyelesaikan akar masalah bisnis, meningkatkan profitabilitas, dan merancang roadmap pertumbuhan korporasi.
             </p>
             <div class="hero-card-metrics">
               <div class="metric-box">
-                <div class="metric-val">1. RUN</div>
-                <div class="metric-lbl">Operasional Pajak, Lapkeu &amp; Legal Rutin</div>
+                <div class="metric-val" data-i18n="blueprint.run_title">1. RUN</div>
+                <div class="metric-lbl" data-i18n="blueprint.run_desc">Operasional Pajak, Lapkeu &amp; Legal Rutin</div>
               </div>
               <div class="metric-box">
-                <div class="metric-val">2. FIX</div>
-                <div class="metric-lbl">Tax &amp; Financial Restructuring Project</div>
+                <div class="metric-val" data-i18n="blueprint.fix_title">2. FIX</div>
+                <div class="metric-lbl" data-i18n="blueprint.fix_desc">Tax &amp; Financial Restructuring Project</div>
               </div>
               <div class="metric-box">
-                <div class="metric-val">3. GROW</div>
-                <div class="metric-lbl">Holding Structure &amp; Strategic Retainer</div>
+                <div class="metric-val" data-i18n="blueprint.grow_title">3. GROW</div>
+                <div class="metric-lbl" data-i18n="blueprint.grow_desc">Holding Structure &amp; Strategic Retainer</div>
               </div>
               <div class="metric-box">
-                <div class="metric-val">ZENI IT</div>
-                <div class="metric-lbl">Enterprise Tech &amp; Cloud ERP System</div>
+                <div class="metric-val" data-i18n="blueprint.tech_title">ZENI IT</div>
+                <div class="metric-lbl" data-i18n="blueprint.tech_desc">Enterprise Tech &amp; Cloud ERP System</div>
               </div>
             </div>
           </div>
@@ -334,21 +335,21 @@
   <section class="stats-strip">
     <div class="container">
       <div class="stats-grid">
-        <div class="stat-item">
+        <div class="stat-item reveal-item reveal-delay-1">
           <div class="stat-number">RUN</div>
-          <div class="stat-label">Fondasi Operasional Finansial, Pajak, &amp; Legalitas</div>
+          <div class="stat-label" data-i18n="stats.run_label">Fondasi Operasional Finansial, Pajak, &amp; Legalitas</div>
         </div>
-        <div class="stat-item">
+        <div class="stat-item reveal-item reveal-delay-2">
           <div class="stat-number">FIX</div>
-          <div class="stat-label">Diagnostik &amp; Turnaround Inefisiensi Bisnis</div>
+          <div class="stat-label" data-i18n="stats.fix_label">Diagnostik &amp; Turnaround Inefisiensi Bisnis</div>
         </div>
-        <div class="stat-item">
+        <div class="stat-item reveal-item reveal-delay-3">
           <div class="stat-number">GROW</div>
-          <div class="stat-label">Akselerasi Ekspansi, Valuasi, &amp; Struktur Holding</div>
+          <div class="stat-label" data-i18n="stats.grow_label">Akselerasi Ekspansi, Valuasi, &amp; Struktur Holding</div>
         </div>
-        <div class="stat-item">
+        <div class="stat-item reveal-item reveal-delay-4">
           <div class="stat-number">TECH</div>
-          <div class="stat-label">Automasi Sistem Digital &amp; Software Zeni IT</div>
+          <div class="stat-label" data-i18n="stats.tech_label">Automasi Sistem Digital &amp; Software Zeni IT</div>
         </div>
       </div>
     </div>
@@ -361,36 +362,43 @@
         <div>
           <div class="section-badge">
             <i data-lucide="compass"></i> Transformasi Model Bisnis Advisory
+  <!-- Section: Positioning & The RUN-FIX-GROW Methodology -->
+  <section class="section-py">
+    <div class="container">
+      <div class="card-grid-2" style="align-items: center;">
+        <div class="reveal-item">
+          <div class="section-badge" data-i18n="pos.badge">
+            <i data-lucide="compass"></i> Transformasi Model Bisnis Advisory
           </div>
           <h2 class="section-title">
-            Bukan Sekadar Jasa Jam Kerja, <br><span class="text-gold-gradient">Kami Menjual Solusi Bernilai Nyata</span>
+            <span data-i18n="pos.title_start">Bukan Sekadar Jasa Jam Kerja, </span><br><span class="text-gold-gradient" data-i18n="pos.title_highlight">Kami Menjual Solusi Bernilai Nyata</span>
           </h2>
           <div class="gold-divider" style="margin-left: 0;"></div>
-          <p style="margin-bottom: 1.2rem; font-size: 1.05rem; line-height: 1.8;">
+          <p style="margin-bottom: 1.2rem; font-size: 1.05rem; line-height: 1.8;" data-i18n="pos.p1">
             Sebuah perusahaan dengan omzet puluhan miliar tetapi profit tipis tidak membutuhkan sekadar "20 jam sesi konsultasi". Mereka membutuhkan <strong>Profitability Improvement &amp; Corporate Restructuring Program</strong>.
           </p>
-          <p style="margin-bottom: 2rem; font-size: 0.95rem; color: var(--text-muted); line-height: 1.7;">
+          <p style="margin-bottom: 2rem; font-size: 0.95rem; color: var(--text-muted); line-height: 1.7;" data-i18n="pos.p2">
             Di <strong>Konsulin Group</strong>, kami mengombinasikan ketajaman analisis finansial, mitigasi risiko pajak, kepastian hukum, dan sistem teknologi terotomasi untuk merancang ekosistem bisnis yang tahan krisis dan siap tumbuh eksponensial.
           </p>
 
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2.2rem;">
-            <div style="background: rgba(13, 25, 46, 0.6); padding: 1.2rem; border-left: 3px solid var(--gold-400); border-radius: 4px;">
+            <div style="background: rgba(14, 14, 18, 0.8); padding: 1.2rem; border-left: 3px solid var(--gold-400); border-radius: 4px;">
               <h4 style="font-size: 1.05rem; margin-bottom: 0.3rem; color: #fff;">Pyramid of Trust</h4>
               <p style="font-size: 0.85rem; color: var(--text-muted);">Mulai dari diagnostic health check presisi, project perbaikan, hingga pendampingan retainer bulanan.</p>
             </div>
-            <div style="background: rgba(13, 25, 46, 0.6); padding: 1.2rem; border-left: 3px solid var(--gold-400); border-radius: 4px;">
+            <div style="background: rgba(14, 14, 18, 0.8); padding: 1.2rem; border-left: 3px solid var(--gold-400); border-radius: 4px;">
               <h4 style="font-size: 1.05rem; margin-bottom: 0.3rem; color: #fff;">Sinergi Cross-Selling</h4>
               <p style="font-size: 0.85rem; color: var(--text-muted);">Satu pintu ekosistem untuk kebutuhan Akuntansi, Perpajakan, Hukum Perusahaan, dan Software Zeni.</p>
             </div>
           </div>
 
           <a href="services.html" class="btn btn-outline-gold">
-            <span>Lihat Tangga Layanan &amp; Revenue Ladder</span>
+            <span data-i18n="pos.btn">Lihat Tangga Layanan &amp; Revenue Ladder</span>
             <i data-lucide="chevron-right"></i>
           </a>
         </div>
 
-        <div style="position: relative;">
+        <div style="position: relative;" class="reveal-item reveal-delay-2">
           <!-- Framework Diagram Box -->
           <div style="background: var(--card-gradient); border: 1px solid var(--border-gold); border-radius: var(--radius-lg); padding: 2.5rem; box-shadow: var(--shadow-luxury);">
             <div style="text-align: center; margin-bottom: 1.8rem;">
@@ -399,7 +407,7 @@
             </div>
             
             <div style="display: flex; flex-direction: column; gap: 1.2rem;">
-              <div style="background: #08101e; border: 1px solid rgba(197, 160, 89, 0.3); border-radius: var(--radius-md); padding: 1.2rem;">
+              <div style="background: #08080a; border: 1px solid rgba(197, 160, 89, 0.25); border-radius: var(--radius-md); padding: 1.2rem;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.3rem;">
                   <strong style="color: var(--gold-300); font-size: 1.1rem;">① RUN &bull; Operasional Bisnis</strong>
                   <span class="subsidiary-tag">Recurring</span>
@@ -407,7 +415,7 @@
                 <p style="font-size: 0.85rem; color: var(--text-muted);">Accounting, Tax Compliance, Payroll, dan Administrasi Legalitas Perusahaan tanpa kendala.</p>
               </div>
 
-              <div style="background: #08101e; border: 1px solid rgba(197, 160, 89, 0.3); border-radius: var(--radius-md); padding: 1.2rem;">
+              <div style="background: #08080a; border: 1px solid rgba(197, 160, 89, 0.25); border-radius: var(--radius-md); padding: 1.2rem;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.3rem;">
                   <strong style="color: var(--gold-300); font-size: 1.1rem;">② FIX &bull; Solusi Akar Masalah</strong>
                   <span class="subsidiary-tag">Project Fee</span>
@@ -415,7 +423,7 @@
                 <p style="font-size: 0.85rem; color: var(--text-muted);">Tax Optimization, Financial Diagnostic, Turnaround Cash Flow, dan Legal Contract Restructuring.</p>
               </div>
 
-              <div style="background: #08101e; border: 1px solid rgba(197, 160, 89, 0.3); border-radius: var(--radius-md); padding: 1.2rem;">
+              <div style="background: #08080a; border: 1px solid rgba(197, 160, 89, 0.25); border-radius: var(--radius-md); padding: 1.2rem;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.3rem;">
                   <strong style="color: var(--gold-300); font-size: 1.1rem;">③ GROW &bull; Skala &amp; Valuasi</strong>
                   <span class="subsidiary-tag">Advisory Retainer</span>
@@ -430,24 +438,24 @@
   </section>
 
   <!-- Subsidiary Advisory Ecosystem Section -->
-  <section class="section-py bg-navy-elevated">
+  <section class="section-py" style="background: #050505;">
     <div class="container">
-      <div class="section-header">
-        <div class="section-badge">
-          <i data-lucide="grid"></i> Struktur Ekosistem Konsulin Group
+      <div class="section-header reveal-item">
+        <div class="section-badge" data-i18n="pillars.badge">
+          <i data-lucide="grid"></i> 4 Pilar Solusi Terintegrasi
         </div>
         <h2 class="section-title">
-          Empat Lini Terpadu, <span class="text-gold-gradient">Satu Sinergi Tanpa Celah</span>
+          <span data-i18n="pillars.title_start">Sinergi Ekosistem </span><span class="text-gold-gradient" data-i18n="pillars.title_highlight">Konsulin Group</span>
         </h2>
         <div class="gold-divider"></div>
-        <p class="section-subtitle">
-          Ketika client bermitra dengan Konsulin Group, Anda mendapatkan kekuatan penuh dari 4 pilar advisory interdisipliner.
+        <p class="section-subtitle" data-i18n="pillars.subtitle">
+          Satu atap keahlian multidisiplin untuk menjawab segala tantangan korporasi.
         </p>
       </div>
 
       <div class="card-grid-4">
         <!-- Unit 1: Financial & Tax -->
-        <div class="subsidiary-card">
+        <div class="subsidiary-card reveal-item reveal-delay-1">
           <div class="subsidiary-img-wrap">
             <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80" alt="Financial & Tax">
             <div class="subsidiary-overlay"></div>
@@ -467,7 +475,7 @@
         </div>
 
         <!-- Unit 2: Legal Advisory -->
-        <div class="subsidiary-card">
+        <div class="subsidiary-card reveal-item reveal-delay-2">
           <div class="subsidiary-img-wrap">
             <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80" alt="Legal Advisory">
             <div class="subsidiary-overlay"></div>
@@ -487,7 +495,7 @@
         </div>
 
         <!-- Unit 3: Business Advisory -->
-        <div class="subsidiary-card">
+        <div class="subsidiary-card reveal-item reveal-delay-3">
           <div class="subsidiary-img-wrap">
             <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Business Advisory">
             <div class="subsidiary-overlay"></div>
@@ -507,7 +515,7 @@
         </div>
 
         <!-- Unit 4: Technology & IT -->
-        <div class="subsidiary-card">
+        <div class="subsidiary-card reveal-item reveal-delay-4">
           <div class="subsidiary-img-wrap">
             <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Technology Advisory">
             <div class="subsidiary-overlay"></div>
@@ -532,22 +540,22 @@
   <!-- Consulting Revenue Ladder Section -->
   <section class="section-py">
     <div class="container">
-      <div class="section-header">
-        <div class="section-badge">
+      <div class="section-header reveal-item">
+        <div class="section-badge" data-i18n="ladder.badge">
           <i data-lucide="layers"></i> Consulting Revenue Ladder
         </div>
         <h2 class="section-title">
-          Tiga Jenjang Kemitraan: <span class="text-gold-gradient">Dari Diagnostik hingga Strategic Retainer</span>
+          <span data-i18n="ladder.title_start">Tiga Jenjang Kemitraan: </span><span class="text-gold-gradient" data-i18n="ladder.title_highlight">Dari Diagnostik hingga Strategic Retainer</span>
         </h2>
         <div class="gold-divider"></div>
-        <p class="section-subtitle">
+        <p class="section-subtitle" data-i18n="ladder.subtitle">
           Struktur engagement yang transparan dan terukur, dirancang untuk memberikan hasil nyata di setiap fase pertumbuhan perusahaan.
         </p>
       </div>
 
       <div class="card-grid-3">
         <!-- Level 1 -->
-        <div class="luxury-card" style="border-top: 3px solid var(--gold-400);">
+        <div class="luxury-card reveal-item reveal-delay-1" style="border-top: 3px solid var(--gold-400);">
           <div>
             <span class="section-badge" style="margin-bottom: 0.8rem;">Level 1 &bull; Entry Service</span>
             <h3 class="card-title">Konsulin Business Health Check</h3>
@@ -565,12 +573,12 @@
             </ul>
           </div>
           <a href="contact.html?inquiry=healthcheck" class="btn btn-gold" style="width: 100%;">
-            <span>Book Business Diagnostic</span>
+            <span data-i18n="ladder.btn1">Book Business Diagnostic</span>
           </a>
         </div>
 
         <!-- Level 2 -->
-        <div class="luxury-card" style="border-top: 3px solid var(--gold-400); background: linear-gradient(145deg, #132644 0%, #08101e 100%);">
+        <div class="luxury-card reveal-item reveal-delay-2" style="border-top: 3px solid var(--gold-400); background: linear-gradient(145deg, #101014 0%, #050505 100%);">
           <div>
             <span class="section-badge" style="margin-bottom: 0.8rem;">Level 2 &bull; Consulting Project</span>
             <h3 class="card-title">High-Ticket Improvement Project</h3>
@@ -588,12 +596,12 @@
             </ul>
           </div>
           <a href="contact.html?inquiry=project" class="btn btn-outline-gold" style="width: 100%;">
-            <span>Diskusikan Proyek Khusus</span>
+            <span data-i18n="ladder.btn2">Diskusikan Proyek Khusus</span>
           </a>
         </div>
 
         <!-- Level 3 -->
-        <div class="luxury-card" style="border-top: 3px solid var(--gold-400);">
+        <div class="luxury-card reveal-item reveal-delay-3" style="border-top: 3px solid var(--gold-400);">
           <div>
             <span class="section-badge" style="margin-bottom: 0.8rem;">Level 3 &bull; Strategic Retainer</span>
             <h3 class="card-title">Monthly Advisory Retainer</h3>
@@ -611,7 +619,7 @@
             </ul>
           </div>
           <a href="contact.html?inquiry=retainer" class="btn btn-gold" style="width: 100%;">
-            <span>Pilih Paket Retainer</span>
+            <span data-i18n="ladder.btn3">Pilih Paket Retainer</span>
           </a>
         </div>
       </div>
@@ -619,23 +627,23 @@
   </section>
 
   <!-- McKinsey-Style Sales & Engagement Process -->
-  <section class="section-py bg-navy-elevated">
+  <section class="section-py" style="background: #060608;">
     <div class="container">
-      <div class="section-header">
-        <div class="section-badge">
+      <div class="section-header reveal-item">
+        <div class="section-badge" data-i18n="journey.badge">
           <i data-lucide="git-commit"></i> The McKinsey-Style Sales Journey
         </div>
         <h2 class="section-title">
-          Bagaimana Kami Menghadirkan <span class="text-gold-gradient">Nilai Transformasional</span>
+          <span data-i18n="journey.title_start">Bagaimana Kami Menghadirkan </span><span class="text-gold-gradient" data-i18n="journey.title_highlight">Nilai Transformasional</span>
         </h2>
         <div class="gold-divider"></div>
-        <p class="section-subtitle">
+        <p class="section-subtitle" data-i18n="journey.subtitle">
           Metodologi 4 langkah presisi untuk memetakan kondisi nyata, menemukan akar masalah, dan mengeksekusi perbaikan bernilai tinggi.
         </p>
       </div>
 
       <div class="card-grid-4">
-        <div class="luxury-card">
+        <div class="luxury-card reveal-item reveal-delay-1">
           <div class="card-icon-wrap"><i data-lucide="coffee"></i></div>
           <h4 style="font-size: 1.15rem; color: #fff; margin-bottom: 0.5rem;">STEP 1 &bull; Discovery</h4>
           <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
@@ -643,7 +651,7 @@
           </p>
         </div>
 
-        <div class="luxury-card">
+        <div class="luxury-card reveal-item reveal-delay-2">
           <div class="card-icon-wrap"><i data-lucide="activity"></i></div>
           <h4 style="font-size: 1.15rem; color: #fff; margin-bottom: 0.5rem;">STEP 2 &bull; Diagnostic</h4>
           <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
@@ -651,7 +659,7 @@
           </p>
         </div>
 
-        <div class="luxury-card">
+        <div class="luxury-card reveal-item reveal-delay-3">
           <div class="card-icon-wrap"><i data-lucide="file-text"></i></div>
           <h4 style="font-size: 1.15rem; color: #fff; margin-bottom: 0.5rem;">STEP 3 &bull; Present Findings</h4>
           <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
@@ -659,7 +667,7 @@
           </p>
         </div>
 
-        <div class="luxury-card">
+        <div class="luxury-card reveal-item reveal-delay-4">
           <div class="card-icon-wrap"><i data-lucide="rocket"></i></div>
           <h4 style="font-size: 1.15rem; color: #fff; margin-bottom: 0.5rem;">STEP 4 &bull; Transformation</h4>
           <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
@@ -669,6 +677,7 @@
       </div>
     </div>
   </section>
+
 
   <!-- Corporate Knowledge Base / FAQ Section (AEO & Search Engines) -->
   <section class="section-py" id="faq-section" itemscope itemtype="https://schema.org/FAQPage">
@@ -746,25 +755,25 @@
   </section>
 
   <!-- CTA Banner Section -->
-  <section class="section-py" style="padding-top: 0;">
+  <section class="section-py reveal-item" style="padding-top: 0;">
     <div class="container">
       <div class="cta-banner">
         <span class="section-badge" style="background: rgba(197, 160, 89, 0.2);">
           <i data-lucide="briefcase"></i> Executive Partnership
         </span>
-        <h2 class="cta-title">
+        <h2 class="cta-title" data-i18n="cta_title">
           Siap Membangun Sinergi <span class="text-gold-gradient">Bersama Konsulin Group?</span>
         </h2>
-        <p class="cta-subtitle">
+        <p class="cta-subtitle" data-i18n="cta_subtitle">
           Hubungi tim eksekutif kami untuk konsultasi korporasi, peluang investasi bersama, atau diskusi strategis terkait portofolio kami.
         </p>
         <div style="display: flex; justify-content: center; gap: 1.2rem; flex-wrap: wrap;">
           <a href="contact.html" class="btn btn-gold btn-lg">
-            <span>Jadwalkan Pertemuan Eksekutif</span>
+            <span data-i18n="cta_btn1">Jadwalkan Pertemuan Eksekutif</span>
             <i data-lucide="calendar"></i>
           </a>
           <a href="services.html" class="btn btn-outline-gold btn-lg">
-            <span>Pelajari Layanan Lengkap</span>
+            <span data-i18n="cta_btn2">Pelajari Layanan Lengkap</span>
           </a>
         </div>
       </div>
@@ -862,6 +871,7 @@
   </div>
 
   <!-- Scripts -->
+  <script src="js/translations.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

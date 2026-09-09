@@ -156,4 +156,28 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // --- Scroll Reveal Animation Observer ---
+  const revealElements = document.querySelectorAll('.reveal-item');
+  if (revealElements.length > 0) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+  }
+
+  // --- Initialize I18N Language Switcher if available ---
+  if (window.I18N) {
+    window.I18N.init();
+  }
 });
+
