@@ -228,13 +228,14 @@
           </div>
 
           <!-- Interactive Map Component -->
-          <div class="map-container">
+          <div class="map-container" data-lenis-prevent>
             <iframe 
               src="https://maps.google.com/maps?q=-6.2777546,106.6321889&hl=id&z=16&output=embed" 
               allowfullscreen="" 
               loading="lazy" 
               referrerpolicy="no-referrer-when-downgrade"
-              title="Lokasi Kantor Konsulin.id BSD Tangerang">
+              title="Lokasi Kantor Konsulin.id BSD Tangerang"
+              data-lenis-prevent>
             </iframe>
             <div style="position: absolute; bottom: 12px; right: 12px; z-index: 5;">
               <a href="https://maps.app.goo.gl/NLeQVcj3ZYSqt7jv8" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-sm" style="box-shadow: 0 4px 15px rgba(0,0,0,0.15); font-size: 0.78rem; padding: 0.45rem 0.85rem;">
@@ -442,6 +443,7 @@
   </div>
 
   <!-- Scripts -->
+  <script src="js/lenis.min.js"></script>
   <script src="js/translations.js"></script>
   <script src="js/main.js"></script>
 </body>

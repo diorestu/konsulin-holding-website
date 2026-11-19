@@ -8,15 +8,68 @@ document.addEventListener('DOMContentLoaded', () => {
     window.lucide.createIcons();
   }
 
+  // --- Initialize Lenis Smooth Scrolling ---
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (typeof Lenis !== 'undefined' && !prefersReducedMotion) {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      orientation: 'vertical',
+      gestureOrientation: 'vertical',
+      smoothWheel: true,
+      wheelMultiplier: 1.0,
+      touchMultiplier: 2.0,
+      infinite: false
+    });
+
+    window.lenis = lenis;
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    // Smooth scroll for internal anchor links (e.g. #faq-section)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href && href.length > 1 && !href.startsWith('#/')) {
+          const targetEl = document.querySelector(href);
+          if (targetEl) {
+            e.preventDefault();
+            lenis.scrollTo(targetEl, { offset: -70 });
+          }
+        }
+      });
+    });
+
+    // Handle hash on initial load
+    if (window.location.hash && !window.location.hash.startsWith('#/')) {
+      const hashTarget = document.querySelector(window.location.hash);
+      if (hashTarget) {
+        setTimeout(() => {
+          lenis.scrollTo(hashTarget, { offset: -70, immediate: false });
+        }, 200);
+      }
+    }
+  }
+
   // --- Sticky Header on Scroll ---
   const header = document.querySelector('.site-header');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
+  const updateHeaderScroll = (scrollY) => {
+    if (scrollY > 40) {
       header?.classList.add('scrolled');
     } else {
       header?.classList.remove('scrolled');
     }
-  });
+  };
+
+  if (window.lenis) {
+    window.lenis.on('scroll', (e) => updateHeaderScroll(e.scroll));
+  } else {
+    window.addEventListener('scroll', () => updateHeaderScroll(window.scrollY));
+  }
 
   // --- Mobile Drawer Toggle ---
   const mobileToggle = document.getElementById('mobileToggle');
@@ -28,12 +81,14 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileDrawer?.classList.add('active');
     drawerOverlay?.classList.add('active');
     document.body.style.overflow = 'hidden';
+    if (window.lenis) window.lenis.stop();
   }
 
   function closeDrawer() {
     mobileDrawer?.classList.remove('active');
     drawerOverlay?.classList.remove('active');
     document.body.style.overflow = '';
+    if (window.lenis) window.lenis.start();
   }
 
   mobileToggle?.addEventListener('click', openDrawer);

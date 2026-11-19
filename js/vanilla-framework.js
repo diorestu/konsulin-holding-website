@@ -50,7 +50,11 @@ class VanillaApp {
       }
 
       this.bindEvents();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      if (window.lenis) {
+        window.lenis.scrollTo(0, { immediate: true });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     }
   }
 
@@ -65,6 +69,7 @@ class VanillaApp {
         mobileDrawer.classList.add('active');
         drawerOverlay.classList.add('active');
         document.body.style.overflow = 'hidden';
+        if (window.lenis) window.lenis.stop();
       }
     };
 
@@ -73,6 +78,7 @@ class VanillaApp {
         mobileDrawer.classList.remove('active');
         drawerOverlay.classList.remove('active');
         document.body.style.overflow = '';
+        if (window.lenis) window.lenis.start();
       }
     };
 
@@ -568,6 +574,27 @@ const Pages = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (typeof Lenis !== 'undefined' && !prefersReducedMotion && !window.lenis) {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      orientation: 'vertical',
+      gestureOrientation: 'vertical',
+      smoothWheel: true,
+      wheelMultiplier: 1.0,
+      touchMultiplier: 2.0,
+      infinite: false
+    });
+    window.lenis = lenis;
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }
+
   const app = new VanillaApp({
     rootId: 'app',
     routes: {
